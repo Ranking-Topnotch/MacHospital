@@ -5,10 +5,11 @@ import Icon from 'react-native-vector-icons/FontAwesome';
 const LoginScreen = () => {
   return (
     <View style={styles.wrap}>
-        <Image
-            source={require('./assest/Screenshot 2023-03-20 051458 2.png')} // Path to your image
-            style={{ marginTop: 50, marginBottom: 20}}
-        />
+            
+            <Image
+                source={require('./assest/Screenshot 2023-03-20 051458 2.png')} // Path to your image
+                style={{ marginTop: 50, marginBottom: 20}}
+            />
         <View style={styles.container}>
 
             <TouchableOpacity style={styles.googleButton}>
@@ -70,6 +71,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     backgroundColor: '#fff',
+    paddingTop: 15,
   },
   googleButton: {
     flexDirection: 'row',
@@ -142,7 +144,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'space-between',
     width: '100%',
-    marginTop: 90,
+    marginTop: 60,
   },
   nextButton: {
     backgroundColor: '#00cc99',
